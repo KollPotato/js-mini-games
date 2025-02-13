@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="w-full h-full">
+    <head>
+        <title>Fast Math</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <script defer src="./main.js"></script>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body
+        class="w-full h-full flex flex-col gap-8 justify-center items-center bg-[#bad6ff] text-[#122747] mb-[24px]"
+    >
+        <p id="equation" class="w-fit text-9xl">12 * 16 =</p>
+        <input
+            id="input"
+            class="text-9xl w-2/6 text-center rounded-xl placeholder:select-none placeholder:text-center placeholder:text-[#5c83bd] focus:bg-[#a8c8f7] outline-none"
+            type="number"
+            placeholder="Answer"
+        />
+
+        <div class="top-0 left-0 absolute text-2xl mt-4 ml-4">
+            <p id="record-time">Record time: none</p>
+            <p id="solved-total">Solved in total: 0</p>
+        </div>
+    </body>
+</html>
